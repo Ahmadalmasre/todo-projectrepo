@@ -1,7 +1,7 @@
 //prompt("ادخل اسمك")
-if(confirm("هل تريد تخطي رسائل الترحيب؟")){
-alert("Welcome in us page")
+
 var userName =prompt("ادخل اسمك");
+//alreat("wlcome "+userName);
 
 
 
@@ -10,12 +10,23 @@ var userName =prompt("ادخل اسمك");
 
 
 var Age=prompt("عمرك");
-if(Age<=0){
+while(Age<=0){
     alert("الرجاء ادخال عمرك الحقيقي");
-    Age=prompt("عمرك", "write mail or femail");
+    Age=prompt("عمرك");
 
 }
 var ginder =prompt("ادخل جنسك", "write mail or femail");
+while(ginder!=="mail"||ginder!=="femail"){
+    alert("لا نستقبل شواذ اقلب وجهك من هون"); 
+    ginder =prompt("ادخل جنسك", "write mail or femail")
+    if (ginder!=="mail"||ginder!=="femail"){
+        s=0;
+
+    }else
+    break;
+}
+if(confirm("هل تريد الحصول  رسائل الترحيب؟")){
+    alert("Welcome in us page")
 }else{
     alert("استمتع بموقعنا") 
 }
